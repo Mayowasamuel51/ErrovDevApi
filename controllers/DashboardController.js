@@ -108,10 +108,11 @@ const StorePortfoilo = async (req,res, next)=>{
       errorMessage.statusCode = 422;
       throw error;
     }
-    const { portfoilourl, imageurl, email } = req.body;
+    const { portfoilourl, imageurl, email, aboutyou } = req.body;
     const response = await Portfoilo.create({
       portfoilourl: portfoilourl,
       email: email,
+      aboutyou:aboutyou,
       imageurl: imageurl,
     });
 

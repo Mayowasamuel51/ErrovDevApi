@@ -5,7 +5,9 @@ const  Portfoilo = new Schema({
         type:String,
         // required:true
     },
-
+    aboutyou:{
+        type:String 
+    },
     imageurl:{
         type:String, 
     },
